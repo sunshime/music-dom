@@ -22,6 +22,7 @@ npm run build --report
 - vue + vuex + axios + vue-router 全家桶
 - 使用 less 作为 CSS 的预处理语言
 - gulp 作为自动化构建工具（处理样式兼容问题）
+- 使用 px2rem 计算单位，将 px 转为 rem
 
 
 
