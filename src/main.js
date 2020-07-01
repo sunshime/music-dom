@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import Axios from 'axios'
 import Vuex from 'vuex'
+import '../static/font/iconfont.css'
 
 Vue.config.productionTip = false
 

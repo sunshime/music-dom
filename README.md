@@ -23,6 +23,7 @@ npm run build --report
 - 使用 less 作为 CSS 的预处理语言
 - gulp 作为自动化构建工具（处理样式兼容问题）
 - 使用 px2rem 计算单位，将 px 转为 rem
+- 在项目中使用字体图片(阿里图标)
 
 
 
