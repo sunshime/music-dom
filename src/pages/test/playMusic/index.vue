@@ -47,7 +47,7 @@ export default {
     };
   },
   computed: {
-    // 设置播放进度条
+    // 实时监听播放进度条
     getDashOffset() {
       let percent = 0;
       if (document.getElementsByTagName("audio")[0]) {
@@ -94,7 +94,7 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      // 动态设置圆角周长
+      //  初始化圆的周长
       let circleWidth = document.getElementById("progressCircle").offsetWidth;
       this.dashArray = Math.PI * circleWidth;
       this.dashOffset = Math.PI * circleWidth;
