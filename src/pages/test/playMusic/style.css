@@ -1,0 +1,109 @@
+.font {
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+}
+.playmusic {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.playmusic .bottom-music {
+  box-sizing: border-box;
+  padding: 0 0.64rem;
+  z-index: 999;
+  box-shadow: 5px 5px 5px 5px #efefef, -5px 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+.playmusic .bottom-music {
+  height: 3.41333333rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+}
+.playmusic .bottom-music .music-lt {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 70%;
+  overflow: hidden;
+}
+.playmusic .bottom-music .music-lt .lt-avator {
+  width: 2.13333333rem;
+  height: 2.13333333rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.playmusic .bottom-music .music-lt .lt-avator img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.playmusic .bottom-music .music-lt .lt-title {
+  padding: 0 0.42666667rem;
+  width: 80%;
+}
+.playmusic .bottom-music .music-lt .lt-title span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+}
+.playmusic .bottom-music .music-lt .lt-title .title {
+  font-size: 0.59733333rem;
+  font-weight: 600;
+  color: #333;
+}
+.playmusic .bottom-music .music-lt .lt-title .name {
+  font-size: 0.46933333rem;
+  color: #666;
+}
+.playmusic .bottom-music .music-rt {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.playmusic .bottom-music .music-rt .progress-circle {
+  width: 1.92rem;
+  height: 1.92rem;
+  position: relative;
+}
+.playmusic .bottom-music .music-rt .progress-circle circle {
+  stroke-width: 0.14933333rem;
+  transform-origin: center;
+}
+.playmusic .bottom-music .music-rt .progress-circle .progress-background {
+  transform: scale(0.9);
+  stroke: rgba(212, 68, 57, 0.5);
+}
+.playmusic .bottom-music .music-rt .progress-circle .progress-bar {
+  transform: scale(0.9) rotate(-90deg);
+  stroke: #d44439;
+}
+.playmusic .bottom-music .music-rt .progress-circle .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d44439;
+}
+.playmusic .bottom-music .music-rt .progress-circle .icons {
+  font-size: 1.17333333rem;
+}
+.playmusic .bottom-music .music-rt .progress-circle .icons1 {
+  font-size: 0.96rem;
+}
+.playmusic .bottom-music .music-rt .menu {
+  font-size: 1.70666667rem;
+  color: #d44439;
+  font-weight: 500;
+}
+.playmusic .bottom-music .music-rt .menu {
+  padding-left: 0.85333333rem;
+}

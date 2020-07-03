@@ -1,0 +1,141 @@
+@import '../../../common/less/px2rem.less';
+@import '../../../common/style/common.less';
+
+.playmusic {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+  .bottom-music {
+    box-sizing: border-box;
+    .px2rem(30);
+    padding: 0 @px2rem;
+    z-index: 999;
+    // border-top: 1px solid #efefef;
+    box-shadow: 5px 5px 5px 5px #efefef, -5px 5px 5px 5px rgba(255, 255, 255, 0.5)
+  }
+
+  .bottom-music {
+    .px2rem(160);
+    height: @px2rem;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+
+    .music-lt {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      width: 70%;
+      overflow: hidden;
+
+      .lt-avator {
+        .px2rem(100);
+        width: @px2rem;
+        height: @px2rem;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+
+      .lt-title {
+        .px2rem(20);
+        padding: 0 @px2rem;
+        width: 80%;
+
+        span {
+          display: block;
+          .ellipsis();
+          .font();
+        }
+
+        .title {
+          .px2rem(28);
+          font-size: @px2rem;
+          font-weight: 600;
+          color: #333;
+        }
+
+        .name {
+          .px2rem(22);
+          font-size: @px2rem;
+          color: #666;
+        }
+
+      }
+    }
+
+    .music-rt {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      .progress-circle {
+        .px2rem(90);
+        width: @px2rem;
+        height: @px2rem;
+        position: relative;
+
+        circle {
+          .px2rem(7);
+          stroke-width: @px2rem;
+          transform-origin: center;
+        }
+
+        .progress-background {
+          transform: scale(0.9);
+          stroke: rgba(212, 68, 57, .5);
+        }
+
+        .progress-bar {
+          transform: scale(0.9) rotate(-90deg);
+          stroke: #d44439;
+        }
+
+        .icons {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #d44439;
+        }
+
+        .icons {
+          .px2rem(55);
+          font-size: @px2rem;
+        }
+
+        .icons1 {
+            .px2rem(45);
+            font-size: @px2rem;
+          }
+
+      }
+
+      .menu {
+        .px2rem(80);
+        font-size: @px2rem;
+        color: #d44439;
+        font-weight: 500;
+      }
+
+      .menu {
+        .px2rem(40);
+        padding-left: @px2rem;
+      }
+
+
+    }
+  }
+}
