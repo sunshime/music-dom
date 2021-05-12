@@ -13,7 +13,7 @@
     "axios": "^0.19.2",
     "gulp": "^3.9.1",
     "less-loader": "^4.1.0",
-    "swiper": "^5.4.5",
+    "swiper": "^6.5.1",
     "vue": "^2.5.2",
     "vue-awesome-swiper": "^4.1.1",
     "vue-router": "^3.0.1",
